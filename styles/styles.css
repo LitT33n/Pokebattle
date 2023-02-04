@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 16px;
+	line-height: 1.5;
+	background: #800000;
+	height: 100vh;
+	color:#F2F1FD;
+	overflow-y: hidden;
+}
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+section {
+	background: #800000;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: calc(100vh - 130px);
+	justify-content: space-evenly;
+	align-items: center;
+	align-self: center;
+	margin: 0 auto;
+}
+
+.container span {
+	font-size: 60px;
+	color: #F2F1FD;
+}
+
+.pokemon-main {
+	display: flex;
+	position: relative;
+	height: 100%;
+	width: 30%;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: space-evenly;
+	background-color: #F2F1FD ;
+	text-align: center;
+	color:#111111;
+	border-radius: 10.5px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.pokemon-main img {
+	width: 213px;
+	height: 100%;
+}
+.attack-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.attack-buttons button {
+	background-color: #800000;
+	border: none;
+	border-radius: 10.5px;
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+	color: #F2F1FD;
+}
+
+.attack-buttons button:nth-child(1) {
+	margin-bottom: 10px;
+}
+.attack-buttons button:nth-child(2) {
+	margin-bottom: 10px;
+}
+
+.life-counter-main {
+	width: 90%;
+	height: 50px;
+	border : 5px solid #111111;
+	border-radius: 5px;
+	background-color: #F2F1FD;
+	margin: 0 auto;
+}
+
+.life-counter-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	background-color: #149414;
+	transition: all 2s
+}
+
+.showInfo {
+	width:30%;
+	text-align: center;
+}
+
+.faint {
+	position: absolute;
+	top: 40px;
+	left: -15%;
+	width: 100%;
+	height: 100%;
+	translate: 50%;
+
+
+	width: 213px;
+	height: 213px;
+	display: none;
+	z-index: 10;
+		
+}
