@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<title>La batalla</title>
+</head>
+
+<body>
+	<section>
+	<h1>Pokemon Battle!</h1>
+	<div class='container'>
+		<div class="pokemon-main">
+			<h3>Charizard</h3>
+			<figure class="faint" id="faintedCharizard">
+				<img src="./assets/faint.png" alt="">
+			</figure>
+			<figure>
+				<img src="./assets/charizard.png" alt="Imagen de charizard">
+			</figure>
+			<p id="charizardnumberhp">HP: 230 / 230</p>
+			<div class='life-counter-main'>
+				<div class="life-counter-inner" id="charizard-life">
+					
+				</div>
+				
+			</div>
+			<div class="attack-buttons">
+				<Button id="lanzallamas">Lanzallamas</Button>
+				<Button id="ataque-ala">Ataque ala</Button>
+				<Button id="anillo-igneo">Anillo ígneo</Button>
+				<Button id="recuperacion">Recuperación</Button>
+			</div>
+		</div>
+		<div class="showInfo">
+			<span>⚡️VS⚡️</span>
+			<p id="info"></p>
+		</div>
+		<div class="pokemon-main">
+			<h3>Lucario</h3>
+			<figure class="faint" id="faintedLucario">
+				<img src="./assets/faint.png" alt="">
+			</figure>
+			<figure>
+				<img src="./assets/lucario.png" alt="Imagen de charizard">
+			</figure>
+			<p id="lucarionumberhp">HP: 215 / 215</p>
+			<div class='life-counter-main'>
+				<div class="life-counter-inner" id="lucario-life">
+					
+				</div>
+			</div>
+			<div class="attack-buttons">
+				<Button id="esfera-aural">Esfera aural</Button>
+				<Button id="onda-certera">Onda certera</Button>
+				<Button id="puño-trueno">Puño trueno</Button>
+				<Button id="a-bocajarro">A bocajarro</Button>
+			</div>
+		</div>
+	</div>
+	<script src="./scripts/Logica.js"></script>
+</section>
+</body>
+
+</html>
