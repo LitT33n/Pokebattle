@@ -9,6 +9,8 @@ let lucarioNumberHp = document.getElementById("lucarionumberhp")
 let faintedCharizard = document.getElementById("faintedCharizard")
 let faintedLucario = document.getElementById("faintedLucario")
 
+let recarga = document.getElementById('recarga')
+
 // -----------------------------------------------------------------------
 
 let lanzallamasButton = document.getElementById("lanzallamas")
@@ -23,6 +25,13 @@ let ondaCerteraButton = document.getElementById("onda-certera")
 let puñoTruenoButton = document.getElementById("puño-trueno")
 let aBocajarroButton = document.getElementById("a-bocajarro")
 
+//-------------- Reinicio --------------------------------
+refresh.addEventListener('click', _ => { location.reload();})
+if (lucarioHp <= 0 || charizardHp <=0) {
+	lucarioHp = 0
+	recarga.setAttribute("style", "display: block")
+	x = 0
+}
 //-------------- LISTENERS --------------------------------
 
 lanzallamasButton.addEventListener("click", lanzallamas)
@@ -318,53 +327,6 @@ function ondaCertera() {
 	turno = "Charizard"
 }
 
-// 215 100%
-// lucarioHp = x
-
-// lucarioHp x 100/215
-
-
-// while (lucarioHp > 0 || charizardHp > 0){
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         lanzallamas()
-//     } else {
-//         break
-//     }
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         esferaAural()
-//     } else {
-//         break
-//     }
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         ondaCertera()
-//     } else {
-//         break
-//     }
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         puñoTrueno()
-//     } else {
-//         break
-//     }
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         aBocajarro()
-//     } else {
-//         break
-//     }
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         anilloIgneo()
-//     } else {
-//         break
-//     }
-//     if(lucarioHp > 0 && charizardHp > 0) {
-//         recuperacion()
-//     } else {
-//         break
-//     } if(lucarioHp > 0 && charizardHp > 0) {
-//         ataqueAla()
-//     } else {
-//         break
-//     }
-// }
 
 if (lucarioHp <= 0) {
 	console.log("Lucario has fainted")
