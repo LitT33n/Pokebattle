@@ -26,12 +26,14 @@ let puñoTruenoButton = document.getElementById("puño-trueno")
 let aBocajarroButton = document.getElementById("a-bocajarro")
 
 //-------------- Reinicio --------------------------------
-refresh.addEventListener('click', _ => { location.reload();})
-if (lucarioHp <= 0 || charizardHp <=0) {
-	lucarioHp = 0
-	recarga.setAttribute("style", "display: block")
-	x = 0
-}
+
+// ESTAN TRATANDO DE LEER LA VARIABLE "lucario hp" antes de declararla. Corrijan él código de acá.
+//refresh.addEventListener('click', _ => { location.reload();})
+//if (lucarioHp <= 0 || charizardHp <=0) {
+//	lucarioHp = 0
+//	recarga.setAttribute("style", "display: block")
+//	x = 0
+//}
 //-------------- LISTENERS --------------------------------
 
 lanzallamasButton.addEventListener("click", lanzallamas)
